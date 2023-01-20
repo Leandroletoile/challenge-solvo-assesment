@@ -1,3 +1,4 @@
+"use client"
 import GoBack from "@/components/Buttons/GoBack";
 import LoginForm from "@/components/Forms/Login";
 import { useRouter } from "next/navigation";

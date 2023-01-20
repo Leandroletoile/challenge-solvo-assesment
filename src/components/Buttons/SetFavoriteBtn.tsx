@@ -15,7 +15,7 @@ export default function SetFavoriteBtn({ city }: { city: string }) {
     if (!user.favorites.includes(city)) {
       user.favorites.push(city)
       localStorage.setItem('user', JSON.stringify(user))
-      await localFetch("localhost:3000", "PUT", user)
+      await localFetch("/", "PUT", user)
       console.log(user)
       return
     }
@@ -23,7 +23,7 @@ export default function SetFavoriteBtn({ city }: { city: string }) {
     const cityInFavorites = user.favorites.indexOf(city)
     user.favorites.splice(cityInFavorites, 1)
     localStorage.setItem('user', JSON.stringify(user))
-    await localFetch("localhost:3000", "PUT", user)
+    await localFetch("/", "PUT", user)
     console.log(user)
     return
   }
