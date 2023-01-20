@@ -1,0 +1,58 @@
+:root {
+  --primary: #2d334a;
+  --secondary: #fffffe;
+  --bg: #fffffe;
+  --btn-main: #ffd803;
+  --btn-second: #bae8e8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: initial;
+  font-size: 1.125rem;
+  min-height: 100vh;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  overflow-x:hidden;
+  background-color: var(--bg);
+  color: var(--primary);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.page {
+  min-height: 100vh;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5vh;
+}
+
+::-webkit-scrollbar {
+  width: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--secondary);
+}
+
+
